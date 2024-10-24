@@ -1,4 +1,3 @@
-@[TOC](环境配置final版本)
 
 # step1: 安装conda
 conda要根据服务器来选择，比如服务器是linux x86_64的，就选择对应的conda。以miniconda为例：
