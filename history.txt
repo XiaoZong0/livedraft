@@ -1,0 +1,95 @@
+    1  nvidia-smi
+    2  uname -a
+    3  cat /etc/os - release
+    4  ls
+    5  cd ..
+    6  ls
+    7  cd root
+    8  ls
+    9  cd ../etc/
+   10  ls
+   11  cd os
+   12  cd ..
+   13  cd root
+   14  cat /etc/os-release
+   15  uname -m
+   16  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   17  ls
+   18  sh Miniconda3-latest-Linux-x86_64.sh
+   19  conda init
+   20  conda -version
+   21  conda --version
+   22  ls
+   23  cd miniconda3/
+   24  ls
+   25  cd ..
+   26  conda activate livedraft
+   27  ls
+   28  pip show numpy
+   29   pip install numpy==1.26.0
+   30  pip install "modelscope[audio]" -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html
+   31  ls
+   32  cd ..
+   33  ls
+   34  mv 'requirements(1).txt' ./root/requirements.txt
+   35  cd root
+   36  ls
+   37  pip install-r requirements.txt
+   38  pip install -r requirements.txt
+   39  mkdir livedraft
+   40  cd livedraft/
+   41  python -c "from modelscope import snapshot_download; snapshot_download('iic/speech_paraformer-large-vad-punc-asr_nat-zh-cn-16k-commovocab8404-pytorch', cache_dir='cache')"n
+   42  python -c "from modelscope import snapshot_download; snapshot_download('iic/speech_paraformer-large-vad-punc-asr_nat-zh-cn-16k-commovocab8404-pytorch', cache_dir='cache')"
+   43  ls
+   44  cd cache
+   45  ls
+   46  cd iic
+   47  ls
+   48  cd speech_paraformer-large-vad-punc-asr_nat-zh-cn-16k-commovocab8404-pytorch/
+   49  ls
+   50  cd ..
+   51  cd speech_paraformer-large-vad-punc-asr_nat-zh-cn-16k-commovocab8404-pytorch/
+   52  ls
+   53  cd ..
+   54  rm -rf cache/
+   55  ls
+   56  unzip iic.zip
+   57  ls
+   58  mkdir iic
+   59  mv speech_paraformer-large-vad-punc_asr_nat-zh-cn-16k-common-vocab8404-pytorch/ ./iic/
+   60  ls
+   61  cd iic
+   62  ls
+   63  cd ..
+   64  mkdir cache
+   65  mv iic/ ./cache/
+   66  ls
+   67  cd cache
+   68  ls
+   69  cd ..
+   70  ls
+   71  conda --version
+   72  conda create -n livedraft python=3.10
+   73  conda activate livedraft
+   74  nvcc -V
+   75  python
+   76  cat /usr/local/cuda/version.txt
+   77  nvidia-smi
+   78  nvcc -V
+   79  dpkg -l | grep cuda
+   80  rpm -qa | grep cuda
+   81  lspci
+   82  ls /usr/local
+   83  dmidecode
+   84  dpkg -l | grep cuda
+   85  conda install dpkg
+   86  lspci | grep -i nvidia
+   87  find / -name cuda 2>/dev/null
+   88  vi ~/.bashrc
+   89  conda --version
+   90  conda install pytorch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 cpuonly -c pytorch
+   91  python
+   92  pip install "modelscope[audio]" -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html
+   93  yum -y install gcc gcc-c++ kernel-devel
+   94  pip install --upgrade Cython==0.29.35
+   95  history 100
